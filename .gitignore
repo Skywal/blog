@@ -1,0 +1,8 @@
+#ide internal files
+
+.idea/
+
+#tmp folder
+tmp/
+!tmp/cache
+tmp/cache/*
