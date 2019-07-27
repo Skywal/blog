@@ -49,7 +49,7 @@ class Cache
 			$content = unserialize(file_get_contents($file));
 			// якщо час існування файлу кешу ще не вичерпався то повертаємо дані з файлу
 			if(time() <= $content['end_time']){
-				return $content;
+				return $content['data'];
 			}
 
 			//видаляємо файл
