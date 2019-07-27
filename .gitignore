@@ -6,3 +6,6 @@
 tmp/
 !tmp/cache
 tmp/cache/*
+
+vendor/composer/
+vendor/gabordemooij/
