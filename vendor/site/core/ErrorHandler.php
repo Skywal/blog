@@ -31,7 +31,7 @@ class ErrorHandler
 	 */
 	public function exeptionHandler($exeption){
 		$this->logErrors($exeption->getMessage(), $exeption->getFile(), $exeption->getLine());
-		$this->displayError('Exeprion', $exeption->getMessage(), $exeption->getFile(), $exeption->getLine(),
+		$this->displayError('Exeption', $exeption->getMessage(), $exeption->getFile(), $exeption->getLine(),
 			$exeption->getCode());
 	}
 

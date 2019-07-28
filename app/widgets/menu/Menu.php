@@ -45,7 +45,7 @@ class Menu
                 $this->data = $cats = \R::getAssoc("SELECT * FROM {$this->table}");
             }
             $this->tree = $this->getTree();
-            debug($this->tree);
+
             $this->menuHtml = $this->getMenuHtml($this->tree);
             if($this->cache){
                 $cache->set($this->cacheKey, $this->menuHtml, $this->cache);
