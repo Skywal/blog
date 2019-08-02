@@ -6,7 +6,16 @@ use site\Router;
  * всі користувацькі правила повинні знаходитися вище за дефолтні для того щоб першими опрацьовувалися вони
  */
 // для статті
-Router::add('^article/(?P<alias>[a-z0-9-_]+)/?$', ['controller' => 'Article', 'action' => 'view']);
+Router::add('^article/(?P<alias>[a-z0-9-_]+)/?$', [
+    'controller' => 'Article',
+    'action' => 'view'
+]);
+
+// пошук по категоріях
+Router::add('^category/(?P<alias>[a-z0-9-_]+)/?$', [
+    'controller' => 'Category',
+    'action' => 'view'
+]);
 
 
 /**

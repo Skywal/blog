@@ -77,7 +77,7 @@ class Router
 	public static function matchRoute($url){
 	    //$pattern  шаблон регулярного виразу $route маршрут для нього
 		foreach (self::$routes as $pattern => $route){
-			if(preg_match("#{$pattern}#", $url, $matches)){
+			if(preg_match("#{$pattern}#i", $url, $matches)){ // 'i' робить вираз незалежним від регістру
 
 			    //прибираємо лишні елементи з числовим ідентифікатором з масиву $matches
 				foreach ($matches as $key => $value){

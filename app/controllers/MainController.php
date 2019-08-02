@@ -24,7 +24,7 @@ class MainController extends AppController
 
 	}
 
-	protected function beautifyText($arr, $start = 0, $txtLength = 255, $endStr = ' ...'){
+	public static function beautifyText($arr, $start = 0, $txtLength = 255, $endStr = ' ...'){
 	    foreach ($arr as $elem){
 	        $elem->text = substr($elem->text, $start, $txtLength) . $endStr;
         }
