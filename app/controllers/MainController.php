@@ -18,15 +18,11 @@ class MainController extends AppController
 			'Page description',
 			'Page keywords');
 
-		$this->beautifyText($articles);
+		beautifyText($articles);
 
 		$this->set(compact('articles'));
 
 	}
 
-	public static function beautifyText($arr, $start = 0, $txtLength = 255, $endStr = ' ...'){
-	    foreach ($arr as $elem){
-	        $elem->text = substr($elem->text, $start, $txtLength) . $endStr;
-        }
-    }
+
 }

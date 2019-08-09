@@ -11,7 +11,7 @@
                 </div>
             </div>
         <?php endforeach; ?>
-    <?php elseif (!$articles_cat): ?>
+    <?php else : ?>
         <div class="content-grid-info">
             <div class="post-info">
                 <h2>No posts</h2>

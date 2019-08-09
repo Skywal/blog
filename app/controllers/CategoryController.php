@@ -25,7 +25,7 @@ class CategoryController extends AppController
         $articles_cat = \R::find('articles', "article_category IN ($ids)");
         $this->setMeta($category->title, $category->description, $category->keywords);
 
-        MainController::beautifyText($articles_cat);
+        beautifyText($articles_cat);
 
         $this->set(compact('articles_cat'));
     }

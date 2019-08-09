@@ -53,8 +53,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  <span class="menu"> </span> 
 				   <ul>
 						<li><a href="<?=PATH?>">HOME</a></li>
-						<li><a href="about.html">ABOUT</a></li>	
-						<li><a href="contact.html">CONTACT</a></li>						
+						<li><a href="about">ABOUT</a></li>
+						<li><a href="contact">CONTACT</a></li>
 						<div class="clearfix"> </div>
 				 </ul>
 			 </div>
