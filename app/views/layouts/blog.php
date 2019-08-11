@@ -78,12 +78,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			  <div class="col-md-4 content-right">
 				 <div class="recent">
 					 <h3>RECENT POSTS</h3>
-					 <ul>
-					 <li><a href="#">Aliquam tincidunt mauris</a></li>
-					 <li><a href="#">Vestibulum auctor dapibus  lipsum</a></li>
-					 <li><a href="#">Nunc dignissim risus consecu</a></li>
-					 <li><a href="#">Cras ornare tristiqu</a></li>
-					 </ul>
+                     <?php new \app\widgets\recentPosts\RecentPosts([
+                         'tpl' => WWW . '/recentPosts/recentPosts.php',
+                         'table' => 'articles',
+                         'container' => 'ul',
+                         'class' => 'rec-posts',
+                         'cache' => 0,
+                         'cacheKey' => 'recent_posts',
+                     ])?>
 				 </div>
 <!--				 <div class="comments">-->
 <!--					 <h3>RECENT COMMENTS</h3>-->

@@ -9,7 +9,6 @@ use site\Cache;
 
 class Menu
 {
-
     protected $data;
     protected $tree;
     protected $menuHtml;
